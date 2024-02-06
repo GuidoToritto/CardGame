@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Encuentra los bastos!</title>
+    <link rel="icon" href="./cards/02.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="showAlert()">
+
+    <div class="alert" id="welcome">
+        <div class="infoAlert">
+            <div class="info">
+                <p>Encuentra los bastos</p>
+                <p class="p2">Las pautas son simples: clickea las cartas hasta encontrar sus pares y, al lograrlo,
+                    declárate vencedor.
+                </p>
+                <br>
+                <br>
+                <button onclick="closeWelcome()">x</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="congratulations" class="alert" style="display: none;">
+        <div class="infoAlert">
+            <div class="info">
+                <p>¡Felicidades! Has ganado el juego.</p>
+                <p class="p3">Gracias por utilizar el juego "Encuentra los bastos"
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards" id="cards">
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
